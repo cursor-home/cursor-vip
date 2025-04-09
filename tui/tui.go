@@ -1,22 +1,23 @@
 package tui
 
-import (
-	"embed"
-	"fmt"
-	"github.com/atotto/clipboard"
-	"github.com/kingparks/cursor-vip/tui/client"
-	"github.com/kingparks/cursor-vip/tui/params"
-	"github.com/kingparks/cursor-vip/tui/tool"
-	"github.com/mattn/go-colorable"
-	"math"
-	"os/signal"
-	"syscall"
+import (   // 导入所需包
+	"embed"                // 用于嵌入静态文件
+	"fmt"                  // 格式化输出
+	"math"                // 数学计算函数
+	"os/signal"           // 信号处理
+	"syscall"             // 系统调用
 
-	"os"
-	"runtime"
-	"strconv"
-	"strings"
-	"time"
+	"github.com/atotto/clipboard"              // 剪贴板操作
+	"github.com/kingparks/cursor-vip/tui/client"    // 客户端通信
+	"github.com/kingparks/cursor-vip/tui/params"    // 参数配置
+	"github.com/kingparks/cursor-vip/tui/tool"      // 工具函数
+	"github.com/mattn/go-colorable"            // 支持跨平台彩色输出
+
+	"os"                   // 操作系统功能
+	"runtime"              // 运行时信息
+	"strconv"              // 字符串转换
+	"strings"              // 字符串处理
+	"time"                 // 时间处理
 
 	"github.com/unknwon/i18n"
 )
